@@ -1,8 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Tec.ProductCatalog.EFCore.Repositories.Options;
-using Tec.ProductCatalog.EFCore.Repositories.Repositories;
-
-namespace Tec.ProductCatalog.EFCore.Repositories
+﻿namespace Tec.ProductCatalog.EFCore.Repositories
 {
     public static class DependencyContainer
     {
@@ -16,11 +12,12 @@ namespace Tec.ProductCatalog.EFCore.Repositories
             Action<DbContextOptionsBuilder> ConfigureOptions = options=>
             options.UseSqlServer(Options.ConnectionString);
 
-            services.AddDbContext<GetProductDbContext>(ConfigureOptions);
+            services.AddDbContext<ProductDbContext>(ConfigureOptions);
             services.AddScoped<IGetProductRepository, GetProductRepository>();
 
-       
             services.AddScoped<IGetProductsRepository, GetProductsRepository>();
+
+            services.AddScoped<ICreateProductRepository, CreateProductRepository>();
 
             return services;
         }

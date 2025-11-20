@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HttpExceptionHandling\HttpExceptionHandling.csproj" />
+    <ProjectReference Include="..\Tec.ProductCatalog.CreateProduct.Rest.Mappings\Tec.ProductCatalog.CreateProduct.Rest.Mappings.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.EFCore.Repositories\Tec.ProductCatalog.EFCore.Repositories.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.Rest.Mappings\Tec.ProductCatalog.GetProduct.Rest.Mappings.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.GetProducts.Rest.Mappings\Tec.ProductCatalog.GetProducts.Rest.Mappings.csproj" />

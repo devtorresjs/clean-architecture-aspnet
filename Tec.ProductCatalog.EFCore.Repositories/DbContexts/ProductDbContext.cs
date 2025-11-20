@@ -1,8 +1,8 @@
 ﻿namespace Tec.ProductCatalog.EFCore.Repositories.DbContexts
 {
-    internal class GetProductDbContext:DbContext
+    internal class ProductDbContext:DbContext
     {
-        public GetProductDbContext(DbContextOptions<GetProductDbContext> options):base(options)
+        public ProductDbContext(DbContextOptions<ProductDbContext> options):base(options)
         {
             ChangeTracker.QueryTrackingBehavior =
             QueryTrackingBehavior.NoTracking;

@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tec.ProductCatalog.CreateProduct.BusinessObjects\Tec.ProductCatalog.CreateProduct.BusinessObjects.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.BusinessObjects\Tec.ProductCatalog.GetProduct.BusinessObjects.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.GetProducts.BusinessObjects\Tec.ProductCatalog.GetProducts.BusinessObjects.csproj" />
   </ItemGroup>

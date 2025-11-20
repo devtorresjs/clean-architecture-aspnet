@@ -10,6 +10,7 @@
 
             services.AddGetProductServices();
             services.AddGetProductsServices();
+            services.AddCreateProductServices();
 
             return services;
         }

@@ -1,6 +1,6 @@
 ﻿namespace Tec.ProductCatalog.EFCore.Repositories.Repositories
 {
-    internal class GetProductRepository(GetProductDbContext context) : IGetProductRepository
+    internal class GetProductRepository(ProductDbContext context) : IGetProductRepository
     {
         public async Task<GetProductDto> GetProductByIdAsync(int id)
         {

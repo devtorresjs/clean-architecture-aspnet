@@ -1,0 +1,13 @@
+global using DomainValidation.Exceptions;
+global using HttpExceptionHandling.Resources;
+global using Microsoft.AspNetCore.Diagnostics;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Logging;
+global using System.Text.Json;
+global using Microsoft.Extensions.Hosting;
+global using HttpExceptionHandling.Handlers;
+global using Microsoft.Extensions.DependencyInjection;
+global using HttpExceptionHandling.Interfaces;
+global using HttpExceptionHandling.Extensions;
+global using Microsoft.AspNetCore.Builder;

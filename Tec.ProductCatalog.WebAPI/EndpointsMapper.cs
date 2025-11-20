@@ -8,6 +8,7 @@
 
             builder.UseGetProductEndpoints();
             builder.UseGetProductsEndpoints();
+            builder.UseCreateProductEndpoints();
 
             return builder;
         }
