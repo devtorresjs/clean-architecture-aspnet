@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.IoC\Tec.ProductCatalog.GetProduct.IoC.csproj" />
+	  <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.Rest.Endpoints\Tec.ProductCatalog.GetProduct.Rest.Endpoints.csproj" />
+	</ItemGroup>
+</Project>

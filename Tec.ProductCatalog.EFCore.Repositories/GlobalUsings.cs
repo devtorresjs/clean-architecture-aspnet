@@ -1,0 +1,10 @@
+global using Tec.ProductCatalog.GetProduct.BusinessObjects.Interfaces;
+global using Tec.ProductCatalog.GetProduct.Entities.Dtos;
+global using Microsoft.EntityFrameworkCore;
+global using Tec.ProductCatalog.EFCore.Repositories.Entities;
+global using Tec.ProductCatalog.EFCore.Repositories.DbContexts;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using System.Reflection;
+global using Tec.ProductCatalog.GetProducts.BusinessObjects.Dtos;
+global using Tec.ProductCatalog.GetProducts.BusinessObjects.Interfaces;
+global using Tec.ProductCatalog.GetProducts.Entities.Dtos;

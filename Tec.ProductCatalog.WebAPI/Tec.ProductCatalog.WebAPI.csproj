@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tec.ProductCatalog.EFCore.Repositories\Tec.ProductCatalog.EFCore.Repositories.csproj" />
+    <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.Rest.Mappings\Tec.ProductCatalog.GetProduct.Rest.Mappings.csproj" />
+    <ProjectReference Include="..\Tec.ProductCatalog.GetProducts.Rest.Mappings\Tec.ProductCatalog.GetProducts.Rest.Mappings.csproj" />
+  </ItemGroup>
+
+</Project>

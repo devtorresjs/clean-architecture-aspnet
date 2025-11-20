@@ -1,0 +1,6 @@
+@Tec.ProductCatalog.WebAPI_HostAddress = http://localhost:5043
+
+GET {{Tec.ProductCatalog.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
