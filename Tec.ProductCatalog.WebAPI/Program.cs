@@ -6,6 +6,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin();
+        policy.AllowAnyMethod();
+        policy.AllowAnyHeader();
+    });
+});
+
 /* se registran los servicios de HttpExceptionHandler ************/
 builder.Services.AddHttpFallbackExceptionHandler();
 builder.Services.AddHttpDomainValidationExceptionHandler();
@@ -28,6 +38,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
+
 
 app.UseTecProductCatalogEndpoints();
 

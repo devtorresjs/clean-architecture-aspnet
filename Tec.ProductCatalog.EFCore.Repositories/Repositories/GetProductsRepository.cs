@@ -11,7 +11,7 @@ namespace Tec.ProductCatalog.EFCore.Repositories.Repositories
 
 
             var Items = await Query
-                .OrderBy(g => g.Id)
+                .OrderByDescending(g => g.Id)
                 .Skip((parameters.PageNumber - 1) * parameters.PageSize)
                 .Take(parameters.PageSize)
                 .ToListAsync();

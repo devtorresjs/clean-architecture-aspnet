@@ -18,5 +18,7 @@
     <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.BusinessObjects\Tec.ProductCatalog.GetProduct.BusinessObjects.csproj" />
     <ProjectReference Include="..\Tec.ProductCatalog.GetProducts.BusinessObjects\Tec.ProductCatalog.GetProducts.BusinessObjects.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<InternalsVisibleTo Include="Tec.ProductCatalog.CreateProduct.IntegrationTests" />
+	</ItemGroup>
 </Project>

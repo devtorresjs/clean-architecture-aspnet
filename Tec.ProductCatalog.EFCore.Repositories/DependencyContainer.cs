@@ -9,10 +9,18 @@
             ProductCatalogDbOptions Options = new();
             configure(Options);
 
-            Action<DbContextOptionsBuilder> ConfigureOptions = options=>
+            Action<DbContextOptionsBuilder> ConfigureOptions = options =>
             options.UseSqlServer(Options.ConnectionString);
 
-            services.AddDbContext<ProductDbContext>(ConfigureOptions);
+            services.AddProductCatalogRepositories(ConfigureOptions);
+
+            return services;
+        }
+        public static IServiceCollection AddProductCatalogRepositories(
+            this IServiceCollection services,
+            Action<DbContextOptionsBuilder> configure)
+        {
+            services.AddDbContext<ProductDbContext>(configure);
             services.AddScoped<IGetProductRepository, GetProductRepository>();
 
             services.AddScoped<IGetProductsRepository, GetProductsRepository>();
