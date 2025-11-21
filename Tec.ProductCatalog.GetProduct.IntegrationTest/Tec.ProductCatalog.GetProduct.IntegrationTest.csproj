@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -16,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Tec.ProductCatalog.EFCore.Repositories\Tec.ProductCatalog.EFCore.Repositories.csproj" />
+    <ProjectReference Include="..\Tec.ProductCatalog.GetProduct.IoC\Tec.ProductCatalog.GetProduct.IoC.csproj" />
   </ItemGroup>
 
   <ItemGroup>

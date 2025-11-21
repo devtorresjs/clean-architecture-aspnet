@@ -20,5 +20,6 @@
   </ItemGroup>
 	<ItemGroup>
 		<InternalsVisibleTo Include="Tec.ProductCatalog.CreateProduct.IntegrationTests" />
+		<InternalsVisibleTo Include="Tec.ProductCatalog.GetProduct.IntegrationTest" />
 	</ItemGroup>
 </Project>
