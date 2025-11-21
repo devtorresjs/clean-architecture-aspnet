@@ -1,6 +1,21 @@
-@Tec.ProductCatalog.WebAPI_HostAddress = http://localhost:5043
+@HostAddress = https://localhost:7164
 
-GET {{Tec.ProductCatalog.WebAPI_HostAddress}}/weatherforecast/
+GET {{HostAddress}}/getproduct/5
 Accept: application/json
 
 ###
+GET {{HostAddress}}/getproducts?PageNumber=1&PageSize=5
+Accept: application/json
+###
+
+POST {{HostAddress}}/createproduct/
+Content-Type: application/json
+
+{
+    "Name":"",
+    "Description":"Acceso premium a plataforma virtual custom",
+    "Price":"12.5",
+    "Stock":3,
+    "ImageUrl":"https://example.com/images/plataformaTEST.jpg",
+    "Status":"Inactive"
+}
