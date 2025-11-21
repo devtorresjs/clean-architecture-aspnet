@@ -86,7 +86,7 @@ Update-Database -p Tec.ProductCatalog.EFCore.Repositories -s Tec.ProductCatalog.
 
 Una vez instalados estos requisitos, el proyecto puede ejecutarse directamente desde Visual Studio.
 ```
-## 🧩 Endpoints y Requests
+## Endpoints y Requests
 
 La definición de los **request** utilizados por los endpoints está ubicada en: la webapi => Tec.ProductCatalog.WebAPI.http
 
