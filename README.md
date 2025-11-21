@@ -79,7 +79,7 @@ Para poder ejecutar el proyecto se necesita:
 2. Selecciona el proyecto **`Tec.ProductCatalog.EFCore.Repositories`** como proyecto predeterminado en la consola.  
 3. Ejecuta los siguientes comandos:
 
-```powershell
+```bash
 Add-Migration AddInitialDB -p Tec.ProductCatalog.EFCore.Repositories -s Tec.ProductCatalog.EFCore.Repositories -c ProductCatalogDbContext
 
 Update-Database -p Tec.ProductCatalog.EFCore.Repositories -s Tec.ProductCatalog.EFCore.Repositories -context ProductCatalogDbContext
