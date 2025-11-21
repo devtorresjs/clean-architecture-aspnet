@@ -88,5 +88,5 @@ Una vez instalados estos requisitos, el proyecto puede ejecutarse directamente d
 ```
 ## 🧩 Endpoints y Requests
 
-La definición de los **request** utilizados por los endpoints está ubicada en: la webapi
+La definición de los **request** utilizados por los endpoints está ubicada en: la webapi => Tec.ProductCatalog.WebAPI.http
 
